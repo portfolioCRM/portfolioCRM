@@ -2,7 +2,7 @@
 
 import { ProjectCard } from "@/components";
 import { Typography } from "@material-tailwind/react";
-
+import {v4 as uuid} from "uuid"
 const PROJECTS = [
   {
     img: "/image/blog-1.svg",
@@ -50,10 +50,19 @@ export function Projects() {
   return (
     <section className="py-28 px-8">
       <div className="container mx-auto mb-20 text-center">
-        <Typography variant="h2" color="blue-gray" className="mb-4">
+        <Typography
+          onPointerEnterCapture={()=> {console.log("first")}}
+          onPointerLeaveCapture={() => {}}
+          placeholder={""}
+          variant="h2"
+          color="blue-gray"
+          className="mb-4">
           My Projects
         </Typography>
         <Typography
+          onPointerEnterCapture={()=> {console.log("first")}}
+          onPointerLeaveCapture={() => {}}
+          placeholder={""}
           variant="lead"
           className="mx-auto w-full px-4 font-normal !text-gray-500 lg:w-6/12"
         >
@@ -64,7 +73,7 @@ export function Projects() {
       </div>
       <div className="container mx-auto grid grid-cols-1 gap-x-10 gap-y-20 md:grid-cols-2 xl:grid-cols-4">
         {PROJECTS.map((props, idx) => (
-          <ProjectCard key={idx} {...props} />
+          <ProjectCard key={uuid()} {...props} />
         ))}
       </div>
     </section>

@@ -2,7 +2,7 @@
 
 import Image from "next/image";
 import { Typography } from "@material-tailwind/react";
-
+import {v4 as uuid} from "uuid"
 const CLIENTS = [
   "coinbase",
   "spotify",
@@ -17,17 +17,29 @@ export function PopularClients() {
     <section className="py-8 px-8 lg:py-20">
       <div className="container mx-auto grid items-center place-items-center">
         <div className="text-center">
-          <Typography variant="h6" className="mb-4 uppercase !text-gray-500">
+          <Typography
+            variant="h6"
+            className="mb-4 uppercase !text-gray-500"
+            onPointerEnterCapture={()=> {console.log("first")}}
+            onPointerLeaveCapture={() => {}}
+            placeholder={""}
+          >
             POPULAR CLIENTS
           </Typography>
-          <Typography variant="h2" color="blue-gray" className="mb-4">
+          <Typography
+            onPointerEnterCapture={()=> {console.log("first")}}
+            onPointerLeaveCapture={() => {}}
+            placeholder={""}
+            variant="h2"
+            color="blue-gray"
+            className="mb-4">
             Trusted by over 10,000+ <br /> clients
           </Typography>
         </div>
         <div className="flex flex-wrap items-center justify-center gap-6 mt-8">
           {CLIENTS.map((logo, key) => (
             <Image
-              key={key}
+              key={uuid()}
               alt={logo}
               width={480}
               height={480}

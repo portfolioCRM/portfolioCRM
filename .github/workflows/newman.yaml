@@ -1,0 +1,40 @@
+name: New man test
+on:
+  pull_request:
+  push:
+    branches: develop
+
+concurrency:
+  group: ${{ github.workflow }}-${{ github.event.pull_request.number || github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Set up Node.js
+        uses: actions/setup-node@v3
+        with:
+          node-version: '16'  # Use the version of Node.js required by your project
+
+      - name: Install dependencies
+        run: npm install
+
+      - name: Build the project
+        run: npm run build
+
+      - name: Start the Next.js application
+        run: npm start &
+        env:
+          NODE_ENV: development
+
+      - name: Wait for the server to start
+        run: |
+          echo "Waiting for server to start..."
+          sleep 20  # Adjust the sleep time as necessary to ensure the server is up and running
+
+      - name: Run Newman Tests
+        run: newman run test/postman_collection.json
