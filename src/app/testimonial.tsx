@@ -114,6 +114,9 @@ export function Testimonial() {
                 />
                 <div className="w-[1px] h-[36px] bg-blue-gray-100" />
                 <Avatar
+                  onPointerEnterCapture={()=> {console.log("first")}}
+                  onPointerLeaveCapture={() => {}}
+                  placeholder={""}
                   variant="rounded"
                   src="/image/avatar3.jpg"
                   alt="spotify"
