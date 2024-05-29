@@ -10,7 +10,7 @@ import {
   DocumentTextIcon,
 } from "@heroicons/react/24/solid";
 import { SkillCard } from "@/components";
-
+import {v4 as uuid} from "uuid"
 const SKILLS = [
   {
     icon: RectangleGroupIcon,
@@ -54,13 +54,29 @@ export function Skills() {
   return (
     <section className="px-8">
       <div className="container mx-auto mb-20 text-center">
-        <Typography color="blue-gray" className="mb-2 font-bold uppercase">
+        <Typography 
+          onPointerEnterCapture={()=> {console.log("first")}}
+          onPointerLeaveCapture={() => {}}
+          placeholder={""}
+          color="blue-gray"
+          className="mb-2 font-bold uppercase"
+        >
           my skills
         </Typography>
-        <Typography variant="h1" color="blue-gray" className="mb-4">
+        <Typography
+          onPointerEnterCapture={()=> {console.log("first")}}
+          onPointerLeaveCapture={() => {}}
+          placeholder={""}
+          variant="h1"
+          color="blue-gray"
+          className="mb-4"
+        >
           What I do
         </Typography>
         <Typography
+          onPointerEnterCapture={()=> {console.log("first")}}
+          onPointerLeaveCapture={() => {}}
+          placeholder={""}
           variant="lead"
           className="mx-auto w-full !text-gray-500 lg:w-10/12"
         >
@@ -71,7 +87,7 @@ export function Skills() {
       </div>
       <div className="container mx-auto grid grid-cols-1 gap-y-10 md:grid-cols-2 lg:grid-cols-3">
         {SKILLS.map((props, idx) => (
-          <SkillCard key={idx} {...props} />
+          <SkillCard key={uuid()} {...props} />
         ))}
       </div>
     </section>
