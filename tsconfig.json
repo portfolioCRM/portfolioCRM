@@ -34,7 +34,7 @@
     "**/*.ts",
     "**/*.tsx",
     ".next/types/**/*.ts"
-  ],
+, "src/lib/connect.js"  ],
   "exclude": [
     "node_modules"
   ]
