@@ -13,6 +13,7 @@ import {
   XMarkIcon,
   Bars3Icon,
 } from "@heroicons/react/24/solid";
+import { DarkModeSwitcher } from "./navBar/DarkModeSwitcher";
 
 const NAV_MENU = [
   {
@@ -101,16 +102,8 @@ export function Navbar() {
             onPointerLeaveCapture={() => {}}
             placeholder={""}
           >Sign In</Button>
-          <a href="https://www.material-tailwind.com/blocks" target="_blank">
-            <Button
-              onPointerEnterCapture={()=> {}}
-              onPointerLeaveCapture={() => {}}
-              placeholder={""}
-              color="gray"
-            >
-              blocks
-            </Button>
-          </a>
+                    <DarkModeSwitcher/>
+
         </div>
         <IconButton
           onPointerEnterCapture={()=> {}}
