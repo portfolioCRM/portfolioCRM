@@ -25,7 +25,8 @@
     "paths": {
       "@/*": [
         "./src/*"
-      ]
+      ],
+      "@/lib/*": ["./lib/*"]
     },
     "forceConsistentCasingInFileNames": true
   },
