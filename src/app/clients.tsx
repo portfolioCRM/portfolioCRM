@@ -2,7 +2,7 @@
 
 import Image from "next/image";
 import { Typography } from "@material-tailwind/react";
-import {v4 as uuid} from "uuid"
+import { v4 as uuid } from "uuid";
 const CLIENTS = [
   "coinbase",
   "spotify",
@@ -17,7 +17,7 @@ export function Clients() {
     <section className="px-8 py-28">
       <div className="container mx-auto text-center">
         <Typography
-          onPointerEnterCapture={()=> {}}
+          onPointerEnterCapture={() => {}}
           onPointerLeaveCapture={() => {}}
           placeholder={""}
           variant="h6"

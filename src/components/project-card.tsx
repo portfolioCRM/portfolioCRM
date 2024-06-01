@@ -16,13 +16,13 @@ interface ProjectCardProps {
 export function ProjectCard({ img, title, desc }: ProjectCardProps) {
   return (
     <Card
-      onPointerEnterCapture={()=> {}}
+      onPointerEnterCapture={() => {}}
       onPointerLeaveCapture={() => {}}
       placeholder={""}
       color="transparent"
     >
       <CardHeader
-        onPointerEnterCapture={()=> {}}
+        onPointerEnterCapture={() => {}}
         onPointerLeaveCapture={() => {}}
         placeholder={""}
         className="mx-0 mt-0 mb-6 h-48"
@@ -36,7 +36,7 @@ export function ProjectCard({ img, title, desc }: ProjectCardProps) {
         />
       </CardHeader>
       <CardBody
-        onPointerEnterCapture={()=> {}}
+        onPointerEnterCapture={() => {}}
         onPointerLeaveCapture={() => {}}
         placeholder={""}
         className="p-0"
@@ -46,24 +46,25 @@ export function ProjectCard({ img, title, desc }: ProjectCardProps) {
           className="text-blue-gray-900 transition-colors hover:text-gray-800"
         >
           <Typography
-           onPointerEnterCapture={()=> {}}
-           onPointerLeaveCapture={() => {}}
-           placeholder={""}
-           variant="h5"
-           className="mb-2"
+            onPointerEnterCapture={() => {}}
+            onPointerLeaveCapture={() => {}}
+            placeholder={""}
+            variant="h5"
+            className="mb-2"
           >
             {title}
           </Typography>
         </a>
         <Typography
-          onPointerEnterCapture={()=> {}}
+          onPointerEnterCapture={() => {}}
           onPointerLeaveCapture={() => {}}
           placeholder={""}
-          className="mb-6 font-normal !text-gray-500">
+          className="mb-6 font-normal !text-gray-500"
+        >
           {desc}
         </Typography>
         <Button
-          onPointerEnterCapture={()=> {}}
+          onPointerEnterCapture={() => {}}
           onPointerLeaveCapture={() => {}}
           placeholder={""}
           color="gray"

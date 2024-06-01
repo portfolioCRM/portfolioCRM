@@ -9,7 +9,7 @@ interface SkillCardProps {
 export function SkillCard({ icon: Icon, title, children }: SkillCardProps) {
   return (
     <Card
-      onPointerEnterCapture={()=> {}}
+      onPointerEnterCapture={() => {}}
       onPointerLeaveCapture={() => {}}
       placeholder={""}
       color="transparent"
@@ -17,7 +17,7 @@ export function SkillCard({ icon: Icon, title, children }: SkillCardProps) {
     >
       <CardBody
         className="grid justify-center text-center"
-        onPointerEnterCapture={()=> {}}
+        onPointerEnterCapture={() => {}}
         onPointerLeaveCapture={() => {}}
         placeholder={""}
       >
@@ -25,19 +25,21 @@ export function SkillCard({ icon: Icon, title, children }: SkillCardProps) {
           <Icon className="h-6 w-6" strokeWidth={2} />
         </div>
         <Typography
-          onPointerEnterCapture={()=> {}}
+          onPointerEnterCapture={() => {}}
           onPointerLeaveCapture={() => {}}
           placeholder={""}
           variant="h5"
           color="blue-gray"
-          className="mb-2">
+          className="mb-2"
+        >
           {title}
         </Typography>
-        <Typography 
-          onPointerEnterCapture={()=> {}}
+        <Typography
+          onPointerEnterCapture={() => {}}
           onPointerLeaveCapture={() => {}}
           placeholder={""}
-          className="px-8 font-normal !text-gray-500">
+          className="px-8 font-normal !text-gray-500"
+        >
           {children}
         </Typography>
       </CardBody>

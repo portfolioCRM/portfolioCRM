@@ -10,7 +10,7 @@ import {
   DocumentTextIcon,
 } from "@heroicons/react/24/solid";
 import { SkillCard } from "@/components";
-import {v4 as uuid} from "uuid"
+import { v4 as uuid } from "uuid";
 const SKILLS = [
   {
     icon: RectangleGroupIcon,
@@ -54,8 +54,10 @@ export function Skills() {
   return (
     <section className="px-8">
       <div className="container mx-auto mb-20 text-center">
-        <Typography 
-          onPointerEnterCapture={()=> {console.log("first")}}
+        <Typography
+          onPointerEnterCapture={() => {
+            console.log("first");
+          }}
           onPointerLeaveCapture={() => {}}
           placeholder={""}
           color="blue-gray"
@@ -64,7 +66,9 @@ export function Skills() {
           my skills
         </Typography>
         <Typography
-          onPointerEnterCapture={()=> {console.log("first")}}
+          onPointerEnterCapture={() => {
+            console.log("first");
+          }}
           onPointerLeaveCapture={() => {}}
           placeholder={""}
           variant="h1"
@@ -74,7 +78,9 @@ export function Skills() {
           What I do
         </Typography>
         <Typography
-          onPointerEnterCapture={()=> {console.log("first")}}
+          onPointerEnterCapture={() => {
+            console.log("first");
+          }}
           onPointerLeaveCapture={() => {}}
           placeholder={""}
           variant="lead"

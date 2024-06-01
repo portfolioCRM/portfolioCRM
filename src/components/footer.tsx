@@ -8,9 +8,9 @@ export function Footer() {
     <footer className="mt-10 px-8 pt-20">
       <div className="container mx-auto">
         <div className="mt-16 flex flex-wrap items-center justify-center gap-y-4 border-t border-gray-200 py-6 md:justify-between">
-          <Typography 
+          <Typography
             className="text-center font-normal !text-gray-700"
-            onPointerEnterCapture={()=> {}}
+            onPointerEnterCapture={() => {}}
             onPointerLeaveCapture={() => {}}
             placeholder={""}
           >
@@ -28,9 +28,9 @@ export function Footer() {
             {LINKS.map((link) => (
               <li key={link}>
                 <Typography
-                        onPointerEnterCapture={()=> {}}
-                        onPointerLeaveCapture={() => {}}
-                        placeholder={""}
+                  onPointerEnterCapture={() => {}}
+                  onPointerLeaveCapture={() => {}}
+                  placeholder={""}
                   as="a"
                   href="#"
                   variant="small"
@@ -41,7 +41,7 @@ export function Footer() {
               </li>
             ))}
             <Button
-              onPointerEnterCapture={()=> {}}
+              onPointerEnterCapture={() => {}}
               onPointerLeaveCapture={() => {}}
               placeholder={""}
               color="gray"

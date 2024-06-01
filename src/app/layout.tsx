@@ -12,14 +12,13 @@ const roboto = Roboto({
 
 export const metadata: Metadata = {
   title: "Raed Rdhaounia",
-  description:
-    "portfolio for  a software developer Raed Rdhaounia",
+  description: "portfolio for  a software developer Raed Rdhaounia",
 };
 
 export default function RootLayout({
   children,
 }: {
- readonly children: React.ReactNode;
+  readonly children: React.ReactNode;
 }) {
   return (
     <html lang="en">

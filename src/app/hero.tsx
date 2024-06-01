@@ -9,7 +9,9 @@ function Hero() {
       <div className="container mx-auto grid h-full gap-10 min-h-[60vh] w-full grid-cols-1 items-center lg:grid-cols-2">
         <div className="row-start-2 lg:row-auto">
           <Typography
-            onPointerEnterCapture={()=> {console.log("first")}}
+            onPointerEnterCapture={() => {
+              console.log("first");
+            }}
             onPointerLeaveCapture={() => {}}
             placeholder={""}
             variant="h1"
@@ -19,7 +21,9 @@ function Hero() {
             Welcome to my Web <br /> Development Portofolio!
           </Typography>
           <Typography
-            onPointerEnterCapture={()=> {console.log("first")}}
+            onPointerEnterCapture={() => {
+              console.log("first");
+            }}
             onPointerLeaveCapture={() => {}}
             placeholder={""}
             variant="lead"
@@ -31,7 +35,9 @@ function Hero() {
           </Typography>
           <div className="grid">
             <Typography
-              onPointerEnterCapture={()=> {console.log("first")}}
+              onPointerEnterCapture={() => {
+                console.log("first");
+              }}
               onPointerLeaveCapture={() => {}}
               placeholder={""}
               variant="small"
@@ -43,7 +49,9 @@ function Hero() {
               {/* @ts-ignore */}
               <Input color="gray" label="Enter your email" size="lg" />
               <Button
-                onPointerEnterCapture={()=> {console.log("first")}}
+                onPointerEnterCapture={() => {
+                  console.log("first");
+                }}
                 onPointerLeaveCapture={() => {}}
                 placeholder={""}
                 color="gray"
@@ -54,7 +62,9 @@ function Hero() {
             </div>
           </div>
           <Typography
-            onPointerEnterCapture={()=> {console.log("first")}}
+            onPointerEnterCapture={() => {
+              console.log("first");
+            }}
             onPointerLeaveCapture={() => {}}
             placeholder={""}
             variant="small"

@@ -1,4 +1,4 @@
-"use client"
+"use client";
 import React, { ForwardRefExoticComponent } from "react";
 import {
   Navbar as MTNavbar,
@@ -20,13 +20,13 @@ import { useTranslation } from "../../../i18n/client";
 interface NAV_MENU_I {
   name: string;
   icon: ForwardRefExoticComponent<Omit<React.SVGProps<SVGSVGElement>, "ref">>;
-  href: string
+  href: string;
 }
 
 /**
  * Define the navigation menu items
  * @type
- * @returns 
+ * @returns
  */
 const NAV_MENU: NAV_MENU_I[] = [
   {
@@ -38,7 +38,6 @@ const NAV_MENU: NAV_MENU_I[] = [
     name: "Settings",
     icon: UserCircleIcon,
     href: "/setting",
-
   },
   {
     name: "Docs",
@@ -54,7 +53,7 @@ interface NavItemProps {
 
 /**
  * Props for the NavItem component.
- * 
+ *
  * @typedef {Object} NavItemProps
  * @property {React.ReactNode} children - The content to be displayed inside the nav item.
  * @property {string} [href] - The URL to navigate to when the nav item is clicked.
@@ -62,7 +61,7 @@ interface NavItemProps {
 
 /**
  * NavItem component - Represents a single navigation item.
- * 
+ *
  * @param {NavItemProps} props - The props for the NavItem component.
  * @returns {JSX.Element} The rendered NavItem component.
  */
@@ -82,12 +81,12 @@ function NavItem({ children, href }: NavItemProps): JSX.Element {
 
 /**
  * AdminNavBar component - Represents the admin navigation bar.
- * 
+ *
  * @returns {JSX.Element} The rendered AdminNavBar component.
  */
 
 export default function AdminNavBar(): JSX.Element {
-  const {t} = useTranslation()
+  const { t } = useTranslation();
   const [open, setOpen] = React.useState(false);
 
   /**
@@ -101,23 +100,25 @@ export default function AdminNavBar(): JSX.Element {
      */
     window.addEventListener(
       "resize",
-      () => window.innerWidth >= 960 && setOpen(false)
+      () => window.innerWidth >= 960 && setOpen(false),
     );
   }, []);
 
   return (
     <MTNavbar
-      onPointerEnterCapture={()=> {console.log("first")}}
+      onPointerEnterCapture={() => {
+        console.log("first");
+      }}
       onPointerLeaveCapture={() => {}}
       placeholder={""}
       shadow={false}
-      fullWidth 
+      fullWidth
       className="border-0 sticky top-0 z-50"
     >
       <div className="container mx-auto flex items-center justify-between">
         {/* app name */}
         <Typography
-          onPointerEnterCapture={()=> {}}
+          onPointerEnterCapture={() => {}}
           onPointerLeaveCapture={() => {}}
           placeholder={""}
           color="blue-gray"
@@ -136,11 +137,11 @@ export default function AdminNavBar(): JSX.Element {
         </ul>
         {/* Dark mode switcher for larger screens */}
         <div className="hidden items-center gap-2 lg:flex">
-          <DarkModeSwitcher/>
+          <DarkModeSwitcher />
         </div>
         {/* Menu button for smaller screens */}
         <IconButton
-          onPointerEnterCapture={()=> {}}
+          onPointerEnterCapture={() => {}}
           onPointerLeaveCapture={() => {}}
           placeholder={""}
           variant="text"

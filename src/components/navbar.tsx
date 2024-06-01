@@ -40,7 +40,7 @@ function NavItem({ children, href }: NavItemProps) {
   return (
     <li>
       <Typography
-        onPointerEnterCapture={()=> {}}
+        onPointerEnterCapture={() => {}}
         onPointerLeaveCapture={() => {}}
         placeholder={""}
         as="a"
@@ -64,22 +64,24 @@ export function Navbar() {
   React.useEffect(() => {
     window.addEventListener(
       "resize",
-      () => window.innerWidth >= 960 && setOpen(false)
+      () => window.innerWidth >= 960 && setOpen(false),
     );
   }, []);
 
   return (
     <MTNavbar
-      onPointerEnterCapture={()=> {console.log("first")}}
+      onPointerEnterCapture={() => {
+        console.log("first");
+      }}
       onPointerLeaveCapture={() => {}}
       placeholder={""}
       shadow={false}
-      fullWidth 
+      fullWidth
       className="border-0 sticky top-0 z-50"
     >
       <div className="container mx-auto flex items-center justify-between">
         <Typography
-          onPointerEnterCapture={()=> {}}
+          onPointerEnterCapture={() => {}}
           onPointerLeaveCapture={() => {}}
           placeholder={""}
           color="blue-gray"
@@ -96,17 +98,18 @@ export function Navbar() {
           ))}
         </ul>
         <div className="hidden items-center gap-2 lg:flex">
-          <Button 
+          <Button
             variant="text"
-            onPointerEnterCapture={()=> {}}
+            onPointerEnterCapture={() => {}}
             onPointerLeaveCapture={() => {}}
             placeholder={""}
-          >Sign In</Button>
-                    <DarkModeSwitcher/>
-
+          >
+            Sign In
+          </Button>
+          <DarkModeSwitcher />
         </div>
         <IconButton
-          onPointerEnterCapture={()=> {}}
+          onPointerEnterCapture={() => {}}
           onPointerLeaveCapture={() => {}}
           placeholder={""}
           variant="text"
@@ -132,18 +135,18 @@ export function Navbar() {
             ))}
           </ul>
           <div className="mt-6 mb-4 flex items-center gap-2">
-            <Button 
+            <Button
               variant="text"
-              onPointerEnterCapture={()=> {}}
+              onPointerEnterCapture={() => {}}
               onPointerLeaveCapture={() => {}}
               placeholder={""}
             >
               Sign In
             </Button>
             <a href="https://www.material-tailwind.com/blocks" target="_blank">
-              <Button 
+              <Button
                 color="gray"
-                onPointerEnterCapture={()=> {}}
+                onPointerEnterCapture={() => {}}
                 onPointerLeaveCapture={() => {}}
                 placeholder={""}
               >

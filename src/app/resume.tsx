@@ -8,7 +8,7 @@ import {
   ArrowRightIcon,
 } from "@heroicons/react/24/solid";
 import { ResumeItem } from "@/components";
-import {v4 as uuid} from "uuid"
+import { v4 as uuid } from "uuid";
 const RESUME_ITEMS = [
   {
     icon: ChartBarIcon,
@@ -30,7 +30,9 @@ export function Resume() {
       <div className="container mx-auto grid w-full grid-cols-1 items-center gap-16 lg:grid-cols-2">
         <div className="col-span-1">
           <Typography
-            onPointerEnterCapture={()=> {console.log("first")}}
+            onPointerEnterCapture={() => {
+              console.log("first");
+            }}
             onPointerLeaveCapture={() => {}}
             placeholder={""}
             variant="h2"
@@ -39,7 +41,9 @@ export function Resume() {
             My Resume
           </Typography>
           <Typography
-            onPointerEnterCapture={()=> {console.log("first")}}
+            onPointerEnterCapture={() => {
+              console.log("first");
+            }}
             onPointerLeaveCapture={() => {}}
             placeholder={""}
             className="mb-4 mt-3 w-9/12 font-normal !text-gray-500"
@@ -49,7 +53,9 @@ export function Resume() {
             websites and web applications.
           </Typography>
           <Button
-            onPointerEnterCapture={()=> {console.log("first")}}
+            onPointerEnterCapture={() => {
+              console.log("first");
+            }}
             onPointerLeaveCapture={() => {}}
             placeholder={""}
             variant="text"

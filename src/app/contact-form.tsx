@@ -17,14 +17,21 @@ export function ContactForm() {
     <section className="px-8 py-16">
       <div className="container mx-auto mb-20 text-center">
         <Typography
-          onPointerEnterCapture={()=> {console.log("first")}}
+          onPointerEnterCapture={() => {
+            console.log("first");
+          }}
           onPointerLeaveCapture={() => {}}
           placeholder={""}
-        variant="h1" color="blue-gray" className="mb-4">
+          variant="h1"
+          color="blue-gray"
+          className="mb-4"
+        >
           Contact Us
         </Typography>
         <Typography
-          onPointerEnterCapture={()=> {console.log("first")}}
+          onPointerEnterCapture={() => {
+            console.log("first");
+          }}
           onPointerLeaveCapture={() => {}}
           placeholder={""}
           variant="lead"
@@ -36,24 +43,39 @@ export function ContactForm() {
       </div>
       <div>
         <Card
-          onPointerEnterCapture={()=> {console.log("first")}}
+          onPointerEnterCapture={() => {
+            console.log("first");
+          }}
           onPointerLeaveCapture={() => {}}
           placeholder={""}
-        shadow={true} className="container mx-auto border border-gray/50">
+          shadow={true}
+          className="container mx-auto border border-gray/50"
+        >
           <CardBody
-            onPointerEnterCapture={()=> {console.log("first")}}
+            onPointerEnterCapture={() => {
+              console.log("first");
+            }}
             onPointerLeaveCapture={() => {}}
             placeholder={""}
-          className="grid grid-cols-1 lg:grid-cols-7 md:gap-10">
+            className="grid grid-cols-1 lg:grid-cols-7 md:gap-10"
+          >
             <div className="w-full col-span-3 rounded-lg h-full py-8 p-5 md:p-16 bg-gray-900">
               <Typography
-                onPointerEnterCapture={()=> {console.log("first")}}
+                onPointerEnterCapture={() => {
+                  console.log("first");
+                }}
                 onPointerLeaveCapture={() => {}}
-                placeholder={""} variant="h4" color="white" className="mb-2">
+                placeholder={""}
+                variant="h4"
+                color="white"
+                className="mb-2"
+              >
                 Contact Information
               </Typography>
               <Typography
-                onPointerEnterCapture={()=> {console.log("first")}}
+                onPointerEnterCapture={() => {
+                  console.log("first");
+                }}
                 onPointerLeaveCapture={() => {}}
                 placeholder={""}
                 variant="lead"
@@ -65,53 +87,80 @@ export function ContactForm() {
               <div className="flex gap-5">
                 <PhoneIcon className="h-6 w-6 text-white" />
                 <Typography
-                  onPointerEnterCapture={()=> {console.log("first")}}
+                  onPointerEnterCapture={() => {
+                    console.log("first");
+                  }}
                   onPointerLeaveCapture={() => {}}
-                  placeholder={""} variant="h6" color="white" className="mb-2">
+                  placeholder={""}
+                  variant="h6"
+                  color="white"
+                  className="mb-2"
+                >
                   +1(424) 535 3523
                 </Typography>
               </div>
               <div className="flex my-2 gap-5">
                 <EnvelopeIcon className="h-6 w-6 text-white" />
                 <Typography
-                  onPointerEnterCapture={()=> {console.log("first")}}
+                  onPointerEnterCapture={() => {
+                    console.log("first");
+                  }}
                   onPointerLeaveCapture={() => {}}
-                  placeholder={""} variant="h6" color="white" className="mb-2">
+                  placeholder={""}
+                  variant="h6"
+                  color="white"
+                  className="mb-2"
+                >
                   hello@mail.com
                 </Typography>
               </div>
               <div className="flex mb-10 gap-5">
                 <TicketIcon className="h-6 w-6 text-white" />
                 <Typography
-                  onPointerEnterCapture={()=> {console.log("first")}}
+                  onPointerEnterCapture={() => {
+                    console.log("first");
+                  }}
                   onPointerLeaveCapture={() => {}}
-                  placeholder={""} variant="h6" color="white" className="mb-2">
+                  placeholder={""}
+                  variant="h6"
+                  color="white"
+                  className="mb-2"
+                >
                   Open Support Ticket
                 </Typography>
               </div>
               <div className="flex items-center gap-5">
                 <IconButton
-                  onPointerEnterCapture={()=> {console.log("first")}}
+                  onPointerEnterCapture={() => {
+                    console.log("first");
+                  }}
                   onPointerLeaveCapture={() => {}}
                   placeholder={""}
-                variant="text"
-                color="white">
+                  variant="text"
+                  color="white"
+                >
                   <i className="fa-brands fa-facebook text-lg" />
                 </IconButton>
                 <IconButton
-                  onPointerEnterCapture={()=> {console.log("first")}}
+                  onPointerEnterCapture={() => {
+                    console.log("first");
+                  }}
                   onPointerLeaveCapture={() => {}}
                   variant="text"
                   placeholder={""}
-                  color="white">
+                  color="white"
+                >
                   <i className="fa-brands fa-instagram text-lg" />
                 </IconButton>
                 <IconButton
-                  onPointerEnterCapture={()=> {console.log("first")}}
+                  onPointerEnterCapture={() => {
+                    console.log("first");
+                  }}
                   onPointerLeaveCapture={() => {}}
                   placeholder={""}
                   variant="text"
-                  color="white">
+                  color="white"
+                >
                   <i className="fa-brands fa-github text-lg" />
                 </IconButton>
               </div>
@@ -126,7 +175,7 @@ export function ContactForm() {
                     variant="static"
                     label="First Name"
                     name="first-name"
-                placeholder="eg. Lucas"
+                    placeholder="eg. Lucas"
                     containerProps={{
                       className: "!min-w-full mb-3 md:mb-0",
                     }}
@@ -138,7 +187,7 @@ export function ContactForm() {
                     variant="static"
                     label="Last Name"
                     name="last-name"
-                placeholder="eg. Jones"
+                    placeholder="eg. Jones"
                     containerProps={{
                       className: "!min-w-full",
                     }}
@@ -151,13 +200,15 @@ export function ContactForm() {
                   variant="static"
                   label="Email"
                   name="first-name"
-              placeholder="eg. lucas@mail.com"
+                  placeholder="eg. lucas@mail.com"
                   containerProps={{
                     className: "!min-w-full mb-8",
                   }}
                 />
                 <Typography
-                  onPointerEnterCapture={()=> {console.log("first")}}
+                  onPointerEnterCapture={() => {
+                    console.log("first");
+                  }}
                   onPointerLeaveCapture={() => {}}
                   placeholder={""}
                   variant="lead"
@@ -196,7 +247,9 @@ export function ContactForm() {
                     className="w-full md:w-fit"
                     color="gray"
                     size="md"
-                    onPointerEnterCapture={()=> {console.log("first")}}
+                    onPointerEnterCapture={() => {
+                      console.log("first");
+                    }}
                     onPointerLeaveCapture={() => {}}
                     placeholder={""}
                   >
