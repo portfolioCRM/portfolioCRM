@@ -1,5 +1,5 @@
-import { create } from 'zustand';
-import { Theme } from './themeTypes';
+import { create } from "zustand";
+import { Theme } from "./themeTypes";
 
 /**
  * Interface representing the state of the theme settings.
@@ -26,13 +26,13 @@ interface ThemeSettingsState {
 
 /**
  * Zustand store for managing theme settings.
- * 
+ *
  * @example
  * const { state, theme, setState, setTheme } = useThemeSettings();
- * 
+ *
  * // Toggle state
  * setState(!state);
- * 
+ *
  * // Update theme
  * setTheme({
  *   primaryColor: '#3498db',
@@ -44,10 +44,10 @@ interface ThemeSettingsState {
 const useThemeSettings = create<ThemeSettingsState>((set) => ({
   state: false,
   theme: {
-    primaryColor: '',
-    secondaryColor: '',
-    backgroundColor: '',
-    textColor: '',
+    primaryColor: "",
+    secondaryColor: "",
+    backgroundColor: "",
+    textColor: "",
   },
   setState: (state: boolean) => set({ state }),
   setTheme: (theme: Theme) => set({ theme }),

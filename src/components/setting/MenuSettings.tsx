@@ -12,7 +12,7 @@ import { useTranslation } from "../../../i18n/client";
 import { useRouter } from "next/navigation";
 
 export function SettingMenu() {
-    const router = useRouter()
+  const router = useRouter();
   const [openMenu, setOpenMenu] = React.useState(false);
   const { t } = useTranslation();
   return (
@@ -22,7 +22,6 @@ export function SettingMenu() {
       handler={setOpenMenu}
       allowHover
       offset={15}
-
     >
       <MenuHandler className="flex items-center justify-between">
         <MenuItem
@@ -61,7 +60,7 @@ export function SettingMenu() {
           onPointerEnterCapture={() => {}}
           onPointerLeaveCapture={() => {}}
           placeholder={""}
-          onClick={()=> router.push("/login")}
+          onClick={() => router.push("/login")}
         >
           edit
         </MenuItem>
