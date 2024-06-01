@@ -14,6 +14,7 @@ import {
   Bars3Icon,
 } from "@heroicons/react/24/solid";
 import { DarkModeSwitcher } from "./navBar/DarkModeSwitcher";
+import { DialogDefault } from "./navBar/SignIn";
 
 const NAV_MENU = [
   {
@@ -98,14 +99,7 @@ export function Navbar() {
           ))}
         </ul>
         <div className="hidden items-center gap-2 lg:flex">
-          <Button
-            variant="text"
-            onPointerEnterCapture={() => {}}
-            onPointerLeaveCapture={() => {}}
-            placeholder={""}
-          >
-            Sign In
-          </Button>
+          <DialogDefault />
           <DarkModeSwitcher />
         </div>
         <IconButton
@@ -135,15 +129,8 @@ export function Navbar() {
             ))}
           </ul>
           <div className="mt-6 mb-4 flex items-center gap-2">
-            <Button
-              variant="text"
-              onPointerEnterCapture={() => {}}
-              onPointerLeaveCapture={() => {}}
-              placeholder={""}
-            >
-              Sign In
-            </Button>
             <a href="https://www.material-tailwind.com/blocks" target="_blank">
+              <DialogDefault />
               <Button
                 color="gray"
                 onPointerEnterCapture={() => {}}

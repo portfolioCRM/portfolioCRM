@@ -15,7 +15,7 @@ export const metadata: Metadata = {
   description: "portfolio for  a software developer Raed Rdhaounia",
 };
 
-export default function RootLayout({
+export default async function RootLayout({
   children,
 }: {
   readonly children: React.ReactNode;
