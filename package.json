@@ -9,23 +9,34 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint",
+    "check-format": "prettier --check .",
+    "check-all": "npm run lint && npm run check-types && npm run check-format",
+    "fix-format": "prettier --write ."
   },
   "dependencies": {
+    "@headlessui/react": "^2.0.4",
     "@heroicons/react": "2.0.18",
     "@material-tailwind/react": "2.1.2",
+    "axios": "^1.7.2",
     "i18next": "^23.11.5",
     "i18next-browser-languagedetector": "^8.0.0",
     "i18next-resources-to-backend": "^1.2.1",
+    "js-cookie": "^3.0.5",
     "mongodb": "^6.7.0",
     "next": "13.4.0",
+    "next-auth": "^5.0.0-beta.18",
+    "next-intl": "^3.15.0",
     "next-themes": "^0.3.0",
     "react": "18",
     "react-dom": "18",
     "react-i18next": "^14.1.2",
-    "uuid": "^9.0.1"
+    "react-toastify": "^10.0.5",
+    "uuid": "^9.0.1",
+    "zustand": "^4.5.2"
   },
   "devDependencies": {
+    "@types/js-cookie": "^3.0.6",
     "@types/node": "20",
     "@types/react": "18",
     "@types/react-dom": "18",
@@ -33,7 +44,10 @@
     "autoprefixer": "10",
     "eslint": "8",
     "eslint-config-next": "13.5.4",
+    "eslint-config-prettier": "^9.1.0",
+    "eslint-plugin-sonar": "^0.14.1",
     "postcss": "8",
+    "prettier": "^3.2.5",
     "tailwindcss": "3",
     "typescript": "5"
   }

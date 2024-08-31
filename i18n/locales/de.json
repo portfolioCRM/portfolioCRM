@@ -1,0 +1,48 @@
+{
+  "app_name": "portfolio",
+  "sidebar": {
+    "dashboard": {
+      "title": "Cruscotto",
+      "statistics": "Statistiche",
+      "general": "Generale"
+    },
+    "experience": {
+      "title": "Esperienza",
+      "add": "Aggiungi un'esperienza",
+      "list": "Elenco delle esperienze"
+    },
+    "experience.add": "Aggiungi esperienza",
+    "project": {
+      "title": "Progetto",
+      "add": "Aggiungi progetto",
+      "list": "Elenco dei progetti"
+    },
+    "skills": {
+      "title": "Competenze",
+      "list": "Elenco delle competenze",
+      "add": "Aggiungi competenze"
+    },
+    "faq": {
+      "title": "FAQ",
+      "list": "Elenco delle FAQ",
+      "add": "Aggiungi FAQ"
+    },
+    "contact": {
+      "title": "Contatto",
+      "list": "Elenco dei contatti",
+      "field": "Campo di contatto"
+    },
+    "seo": {
+      "title": "SEO",
+      "list": "Elenco SEO",
+      "add": "Aggiungi campo SEO"
+    }
+  },
+  "menu": {
+    "open": "Apri",
+    "close": "Chiudi"
+  },
+  "arrow": {
+    "up": "Su"
+  }
+}
