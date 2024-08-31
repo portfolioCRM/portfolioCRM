@@ -1,0 +1,48 @@
+{
+  "app_name": "portfolio",
+  "sidebar": {
+    "dashboard": {
+      "title": "Dashboard",
+      "statistics": "Statistics",
+      "general": "General"
+    },
+    "experience": {
+      "title": "Experience",
+      "add": "Add an Experience",
+      "list": "Experience List"
+    },
+    "experience.add": "Add Experience",
+    "project": {
+      "title": "Project",
+      "add": "Add Project",
+      "list": "Projects List"
+    },
+    "skills": {
+      "title": "Skills",
+      "list": "Skills List",
+      "add": "Add Skills"
+    },
+    "faq": {
+      "title": "FAQ",
+      "list": "FAQ List",
+      "add": "Add FAQ"
+    },
+    "contact": {
+      "title": "Contact",
+      "list": "Contact List",
+      "field": "Contact Field"
+    },
+    "seo": {
+      "title": "SEO",
+      "list": "SEO List",
+      "add": "SEO Field"
+    }
+  },
+  "menu": {
+    "open": "Open",
+    "close": "Close"
+  },
+  "arrow": {
+    "up": "Up"
+  }
+}

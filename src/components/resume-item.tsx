@@ -9,7 +9,7 @@ export function ResumeItem({ icon: Icon, children }: ResumeItemProps) {
   return (
     <div className="flex items-start gap-4">
       <Card
-        onPointerEnterCapture={()=> {}}
+        onPointerEnterCapture={() => {}}
         onPointerLeaveCapture={() => {}}
         placeholder={""}
         color="gray"
@@ -18,7 +18,7 @@ export function ResumeItem({ icon: Icon, children }: ResumeItemProps) {
         <Icon className="h-6 w-6" strokeWidth={2} />
       </Card>
       <Typography
-        onPointerEnterCapture={()=> {}}
+        onPointerEnterCapture={() => {}}
         onPointerLeaveCapture={() => {}}
         placeholder={""}
         className="w-full font-normal !text-gray-500"
