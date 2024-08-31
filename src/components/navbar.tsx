@@ -131,14 +131,6 @@ export function Navbar() {
           <div className="mt-6 mb-4 flex items-center gap-2">
             <a href="https://www.material-tailwind.com/blocks" target="_blank">
               <DialogDefault />
-              <Button
-                color="gray"
-                onPointerEnterCapture={() => {}}
-                onPointerLeaveCapture={() => {}}
-                placeholder={""}
-              >
-                blocks
-              </Button>
             </a>
           </div>
         </div>

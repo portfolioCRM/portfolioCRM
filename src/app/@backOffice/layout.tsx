@@ -1,16 +1,12 @@
 import { Layout } from "@/components";
-import { auth } from "../../../service/auth/auth";
 import AuthLayout from "@/components/admin/AuthLayout";
-import { redirect } from "next/navigation";
 
-export default async function RootLayout({
+export default async function layout({
   children,
 }: {
   readonly children: React.ReactNode;
 }) {
-  const session = await auth();
-
-  if (!session?.user) return redirect("/");
+  console.log("first")
   return (
     <Layout>
       <AuthLayout>{children}</AuthLayout>

@@ -3,6 +3,8 @@ import React, { useState } from "react";
 import AdminNavBar from "../navBar/AdminNavBar";
 import Sidebar from "./navBar/SliderBar";
 import { OpenMenu } from "./navBar/OpenMenu";
+import Footer from "../footer";
+import { FixedPlugin } from "../fixed-plugin";
 
 export default function AuthLayout({
   children,
@@ -22,8 +24,11 @@ export default function AuthLayout({
             />
             {children}
           </div>
+          <Footer />
         </div>
       </div>
+      <FixedPlugin />
+
       <OpenMenu setSidebarOpen={setSidebarOpen} sidebarOpen={sidebarOpen} />
     </>
   );

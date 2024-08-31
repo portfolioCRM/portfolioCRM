@@ -1,8 +1,8 @@
 import React, { useEffect, useRef, useState } from "react";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
-import { useTranslation } from "../../../../i18n/client";
 import Navigation from "./Navigation";
+import { useTranslations } from "next-intl";
 interface SidebarProps {
   sidebarOpen: boolean;
   setSidebarOpen: (arg: boolean) => void;
@@ -10,7 +10,7 @@ interface SidebarProps {
 
 const Sidebar = ({ sidebarOpen, setSidebarOpen }: SidebarProps) => {
   const pathname = usePathname();
-  const { t } = useTranslation();
+  const t = useTranslations();
   const trigger = useRef<any>(null);
   const sidebar = useRef<any>(null);
 

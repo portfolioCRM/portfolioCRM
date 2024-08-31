@@ -1,20 +1,17 @@
 import React from "react";
-import { ChevronUpIcon } from "@heroicons/react/24/solid";
 import {
   Menu,
   MenuHandler,
   MenuList,
   MenuItem,
-  Button,
 } from "@material-tailwind/react";
 import Image from "next/image";
-import { useTranslation } from "../../../i18n/client";
-import { useRouter } from "next/navigation";
+import Link from "next/link";
+import { useTranslations } from "next-intl";
 
 export function SettingMenu() {
-  const router = useRouter();
   const [openMenu, setOpenMenu] = React.useState(false);
-  const { t } = useTranslation();
+  const t = useTranslations();
   return (
     <Menu
       placement="top-end"
@@ -23,33 +20,27 @@ export function SettingMenu() {
       allowHover
       offset={15}
     >
-      <MenuHandler className="flex items-center justify-between">
-        <MenuItem
-          onPointerEnterCapture={() => {}}
-          onPointerLeaveCapture={() => {}}
-          placeholder={""}
-        >
-          <a href="#">
-            <Button
-              color="white"
-              size="sm"
-              className="!fixed bottom-4 right-4 flex gap-1 pl-2 items-center border border-blue-gray-50"
-              onPointerEnterCapture={() => {}}
-              onPointerLeaveCapture={() => {}}
-              placeholder={""}
-            >
-              <Image
-                width={128}
-                height={128}
-                className="w-5 h-5"
-                alt="Material Tailwind"
-                src="/image/up.png"
-              />{" "}
-              {t("arrow.up")}
-            </Button>
-          </a>
-        </MenuItem>
-      </MenuHandler>
+      <Link href={"#"}>
+        <MenuHandler className="flex items-center justify-between">
+          <MenuItem
+            onPointerEnterCapture={() => {}}
+            onPointerLeaveCapture={() => {}}
+            placeholder={""}
+            color="white"
+            className="!fixed bottom-4 right-4 flex gap-1 pl-2 dark:text-black items-center border border-blue-gray-50"
+          >
+            <Image
+              width={128}
+              height={128}
+              className="w-5 h-5"
+              alt="Material Tailwind"
+              src="/image/up.png"
+            />{" "}
+            {t("arrow.up")}
+          </MenuItem>
+        </MenuHandler>
+      </Link>
+
       <MenuList
         onPointerEnterCapture={() => {}}
         onPointerLeaveCapture={() => {}}
@@ -60,7 +51,6 @@ export function SettingMenu() {
           onPointerEnterCapture={() => {}}
           onPointerLeaveCapture={() => {}}
           placeholder={""}
-          onClick={() => router.push("/login")}
         >
           edit
         </MenuItem>

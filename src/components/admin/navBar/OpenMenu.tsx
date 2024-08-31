@@ -1,8 +1,8 @@
 "use client";
 import Image from "next/image";
 import { Button } from "@material-tailwind/react";
-import { useTranslation } from "../../../../i18n/client";
 import { Dispatch, SetStateAction } from "react";
+import { useTranslations } from "next-intl";
 
 interface OpenMenuI {
   /**
@@ -28,7 +28,7 @@ export function OpenMenu({
   setSidebarOpen,
   sidebarOpen,
 }: OpenMenuI): JSX.Element {
-  const { t } = useTranslation();
+  const t = useTranslations();
   return (
     <Button
       color="white"

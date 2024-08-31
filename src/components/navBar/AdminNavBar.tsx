@@ -15,7 +15,7 @@ import {
 } from "@heroicons/react/24/solid";
 import { DarkModeSwitcher } from "./DarkModeSwitcher";
 import Link from "next/link";
-import { useTranslation } from "../../../i18n/client";
+import { useTranslations } from "next-intl";
 
 interface NAV_MENU_I {
   name: string;
@@ -86,7 +86,7 @@ function NavItem({ children, href }: NavItemProps): JSX.Element {
  */
 
 export default function AdminNavBar(): JSX.Element {
-  const { t } = useTranslation();
+  const t = useTranslations();
   const [open, setOpen] = React.useState(false);
 
   /**

@@ -2,6 +2,7 @@
 
 import { ProjectCard } from "@/components";
 import { Typography } from "@material-tailwind/react";
+import { Translation } from "react-i18next";
 import { v4 as uuid } from "uuid";
 const PROJECTS = [
   {

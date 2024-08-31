@@ -1,6 +1,6 @@
 import MenuGroup from "./MenuGroup";
 import { AdminMenuList } from "../../../../config/admin/menuItems";
-import { useTranslation } from "../../../../i18n/client";
+import { useTranslations } from "next-intl";
 
 interface NavigationProps {
   /**
@@ -17,7 +17,7 @@ interface NavigationProps {
  * @returns {JSX.Element} The rendered navigation component.
  */
 export default function Navigation({ pathname }: NavigationProps): JSX.Element {
-  const { t } = useTranslation();
+  const t = useTranslations();
   return (
     <nav className="mt-3 py-4 px-4 lg:mt-9 lg:px-6">
       {AdminMenuList(t).map((group) => (
