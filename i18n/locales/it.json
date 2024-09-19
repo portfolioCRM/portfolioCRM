@@ -1,0 +1,48 @@
+{
+  "app_name": "portfolio",
+  "sidebar": {
+    "dashboard": {
+      "title": "Dashboard",
+      "statistics": "Statistieken",
+      "general": "Algemeen"
+    },
+    "experience": {
+      "title": "Ervaring",
+      "add": "Voeg een ervaring toe",
+      "list": "Ervaringenlijst"
+    },
+    "experience.add": "Ervaring toevoegen",
+    "project": {
+      "title": "Project",
+      "add": "Project toevoegen",
+      "list": "Projectenlijst"
+    },
+    "skills": {
+      "title": "Vaardigheden",
+      "list": "Vaardighedenlijst",
+      "add": "Vaardigheden toevoegen"
+    },
+    "faq": {
+      "title": "FAQ",
+      "list": "FAQ-lijst",
+      "add": "FAQ toevoegen"
+    },
+    "contact": {
+      "title": "Contact",
+      "list": "Contactlijst",
+      "field": "Contactveld"
+    },
+    "seo": {
+      "title": "SEO",
+      "list": "SEO-lijst",
+      "add": "SEO-veld toevoegen"
+    }
+  },
+  "menu": {
+    "open": "Openen",
+    "close": "Sluiten"
+  },
+  "arrow": {
+    "up": "Omhoog"
+  }
+}

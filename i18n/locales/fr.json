@@ -1,0 +1,48 @@
+{
+  "app_name": "portfolio",
+  "sidebar": {
+    "dashboard": {
+      "title": "Tableau de bord",
+      "statistics": "Statistiques",
+      "general": "Général"
+    },
+    "experience": {
+      "title": "Expérience",
+      "add": "Ajouter une expérience",
+      "list": "Liste des expériences"
+    },
+    "experience.add": "Ajouter une expérience",
+    "project": {
+      "title": "Projet",
+      "add": "Ajouter un projet",
+      "list": "Liste des projets"
+    },
+    "skills": {
+      "title": "Compétences",
+      "list": "Liste des compétences",
+      "add": "Ajouter des compétences"
+    },
+    "faq": {
+      "title": "FAQ",
+      "list": "Liste des FAQ",
+      "add": "Ajouter une FAQ"
+    },
+    "contact": {
+      "title": "Contact",
+      "list": "Liste de contacts",
+      "field": "Champ de contact"
+    },
+    "seo": {
+      "title": "SEO",
+      "list": "Liste de SEO",
+      "add": "Ajouter un champ SEO"
+    }
+  },
+  "menu": {
+    "open": "Ouvrir",
+    "close": "Fermer"
+  },
+  "arrow": {
+    "up": "Haut"
+  }
+}
