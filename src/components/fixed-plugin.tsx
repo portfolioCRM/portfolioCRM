@@ -1,8 +1,9 @@
 "use client";
 import Image from "next/image";
 import { Button } from "@material-tailwind/react";
-
+import {useTranslation} from "../../i18n/client"
 export function FixedPlugin() {
+  const {t} = useTranslation()
   return (
     <a href="#">
       <Button
@@ -20,7 +21,7 @@ export function FixedPlugin() {
           alt="Material Tailwind"
           src="/image/up.png"
         />{" "}
-        up
+        {t("arrow.up")}
       </Button>
     </a>
   );
